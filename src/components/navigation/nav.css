@@ -1,0 +1,30 @@
+.nav__bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    margin-inline: auto;
+    background-color: bisque;
+}
+.logo{
+    width: 100%;
+    text-align: center;
+}
+.navLinks__container{
+    width: 200px;
+    height: 100%;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.nav__links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100%;
+}

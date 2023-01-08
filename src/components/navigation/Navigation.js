@@ -4,13 +4,13 @@ import "./nav.css";
 const Navigation = () => {
   return (
     <>
+    <h1 className="logo">Ecommerce</h1>
       <nav className="nav__bar">
-      <div className="logo">Logo</div>
-      <div>
-        <ul className="nav_links">
-          <Link to='/'>Home</Link>
-          <Link to='/products'>Products</Link>
-          <Link to='/cart'>Cart</Link>
+      <div className="navLinks__container">
+        <ul className="nav__links">
+          <Link to='/' className="link">Home</Link>
+          <Link to='/products' className="link">Products</Link>
+          <Link to='/cart' className="link">Cart</Link>
         </ul>
       </div>
       </nav>
