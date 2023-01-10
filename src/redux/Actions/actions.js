@@ -1,9 +1,9 @@
-export const addToCart ="ADD_TO_CART"
+export const addItem ="ADD_TO_CART"
 export const removeFromCart ="REMOVE_ITEM"
 
-export const addItem =(data)=>{
+export const addToItem =(data)=>{
     return {
-        type:addToCart,
+        type:addItem,
         payload:data
     }
 }
