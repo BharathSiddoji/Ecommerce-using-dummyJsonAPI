@@ -3,6 +3,13 @@ import "./products.css";
 
 const Products = (props) => {
   const data = props.data;
+  const btnHandler =(itemId)=>{
+  let itemFiltered = data.filter((each)=>itemId === each.id)
+  console.log(itemFiltered)
+  }
+
+
+
   return (
     <>
       <div className="product__container">
@@ -22,7 +29,7 @@ const Products = (props) => {
                 </div>
                 <div className="item__title">{each.title}</div>
                 <div className="item__price">${each.price}</div>
-                <button className="item__btn">Add to cart</button>
+                <button className="item__btn" onClick={()=>btnHandler(each.id)}>Add to cart</button>
               </div>
             </li>
           ))
