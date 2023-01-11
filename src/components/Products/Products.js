@@ -6,14 +6,17 @@ import { addToItem } from "../../redux/Actions/actions";
 const Products = (props) => {
   const dispatch = useDispatch()
   const data = props.data;
+  
   const btnHandler =(itemId)=>{
   let itemFiltered = data.filter((each)=>itemId === each.id)
+    
   let time = new Date()
   let payLoad={
     id:time.getTime(),
-    brand:itemFiltered[0].brand,
+    title:itemFiltered[0].title,
     price:itemFiltered[0].price,
-    description:itemFiltered[0].description
+    description:itemFiltered[0].description,
+    image:itemFiltered[0].images[0]
   }
   console.log(payLoad)
   // console.log(itemFiltered)

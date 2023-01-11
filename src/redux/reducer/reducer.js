@@ -7,7 +7,7 @@ export const cartReducer =(state = initialState,action)=>{
         case addItem :
             return [...state,action.payload]
         case removeFromCart:
-            return [action.payload]
+            return state =[...action.payload]
         default : return state
     }
 }

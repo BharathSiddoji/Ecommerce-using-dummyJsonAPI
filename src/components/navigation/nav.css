@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 40px;
+    height: 70px;
     align-items: center;
     margin-inline: auto;
     font-family: 'Roboto', sans-serif;
@@ -15,10 +15,13 @@
 .navLinks__container{
     width: 200px;
     height: 100%;
+
 }
 .link{
     text-decoration: none;
     color: black;
+    font-size: 24px;
+    text-align: center;
 }
 
 .nav__links{
@@ -28,4 +31,19 @@
     justify-content: center;
     width: 200px;
     height: 100%;
+}
+.cart{
+    position: relative;
+}
+.cartItems{
+    position: absolute;
+    top: 0px;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 113, 113);
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 1.5px;
+    font-weight: bolder;
 }
