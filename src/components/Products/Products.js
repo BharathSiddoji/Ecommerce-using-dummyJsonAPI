@@ -18,7 +18,7 @@ const Products = (props) => {
     description:itemFiltered[0].description,
     image:itemFiltered[0].images[0]
   }
-  console.log(payLoad)
+  
   // console.log(itemFiltered)
   dispatch(addToItem(payLoad))
   
