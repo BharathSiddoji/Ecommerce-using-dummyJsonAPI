@@ -2,7 +2,7 @@ import React from 'react'
 import './cart.css';
 import {useSelector,useDispatch} from 'react-redux';
 import { removeItem } from '../../redux/Actions/actions';
-
+import cartImage from '../images/emptyCart.svg'
 const Cart = () => {
   const data = useSelector((state)=>state.cartReducer)
   const dispatch = useDispatch()  
@@ -34,8 +34,11 @@ const Cart = () => {
      <div className="total__value cart__empty">
       <h4>Total Cart value : ${total}</h4>
      </div>
-      {items.length <= 0 ? <h1 className='cart__empty'>your Cart is  Empty</h1>: items}
-     
+      {items.length <= 0 ?<div className="cartImage_container">
+        <img src={cartImage} alt="" />
+        <h1 className='cart__empty'>Your Cart is  Empty</h1>
+      </div> : items}
+      
      </div>
     </>
   )

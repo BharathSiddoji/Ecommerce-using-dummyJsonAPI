@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 const Navigation = () => {
   const itemsInCart = useSelector((state)=>state.cartReducer)
   return (
-    <>
+    <div className="nav__header">
     <h1 className="logo">Ecommerce</h1>
       <nav className="nav__bar">
       <div className="navLinks__container">
@@ -17,7 +17,7 @@ const Navigation = () => {
         </ul>
       </div>
       </nav>
-    </>
+    </div>
   );
 };
 

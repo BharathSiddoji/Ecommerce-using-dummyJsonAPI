@@ -4,7 +4,6 @@
     text-align: center;
 }
 .product__container{
-    margin-top: 20px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +23,9 @@
     padding: 10px;  
     text-align: center;
     position: relative;
-    
+}
+.item__card:hover{
+    scale: 1.02;
 }
 .item__card img{
     width: 100%;
@@ -44,9 +45,15 @@
     color: rgb(107, 107, 107);
 }
 .item__btn{
-    padding: 5px;
+    padding: 0px;
     width: 50%;
+    height: 32px;
     background-color: black;
     color: #fff;
     border-radius: 20px;
+    border: none;
+}
+.item__btn:hover{
+    background-color: rgb(118, 118, 255);
+    color: black;
 }

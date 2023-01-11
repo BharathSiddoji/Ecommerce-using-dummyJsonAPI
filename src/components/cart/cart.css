@@ -10,7 +10,7 @@
 }
 
 .Item__card{
-    width:60%;
+    width:40%;
     height: 100px;
     background-color: #fff;
     display: flex;
@@ -21,7 +21,7 @@
     border-radius: 30px;
 }
 .Item__card:hover{
-    scale: 1.1;
+    scale: 1.01;
 }
 .Item__card img{
     width: 50%;
@@ -55,8 +55,34 @@
 }
 .cart__empty{
     color: #fff;
+   
 }
 .total__value{
     font-weight: 500;
     font-family: 'Roboto',sans-serif;
+}
+.cartImage_container{
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    position: relative;
+    padding-top: 30px;
+}
+
+.cartImage_container img{
+    width: 100%;
+    height: 100%;
+}
+.cartImage_container h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .cart_itemTitle{
+        font-size: 12px;
+    }
+    .cart_itemPrice{
+        font-size: 16px;
+    }
 }
